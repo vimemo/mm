@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title translate>admin.app.name</title>
+  </head>
+  <body ng-controller="MainCtrl" ng-cloak>
+    <div class="loader" ng-hide="authorized"></div>
+    <div ng-if="authorized">
+      <ng-include src="'templates/header.html'"></ng-include>
+      <div class="body">
+        <ng-include src="'templates/navigation.html'"></ng-include>
+        <div class="content" ui-view></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/templates.js"></script>
+  </body>
+</html>
