@@ -15,7 +15,8 @@ class BaseConfig {
       capabilities: {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['--headless', '--disable-gpu', '--window-size=1024,768']
+          args: ['--disable-gpu', '--window-size=1024,768']
+          // args: ['--headless', '--disable-gpu', '--window-size=1024,768']
         }
         // browserName: 'firefox',
         // 'marionette':'true'

@@ -659,6 +659,11 @@ var feedback = require('../modules/feedback'),
     };
 
     $scope.replicate = function() {
+      console.log('Replicating from inbox>>>>>>>>>>>>>');
+      console.log('Replicating from inbox>>>>>>>>>>>>>');
+      console.log('Replicating from inbox>>>>>>>>>>>>>');
+      console.log('Replicating from inbox>>>>>>>>>>>>>');
+      console.log('Replicating from inbox>>>>>>>>>>>>>-------------------');
       DBSync.sync(true);
     };
 

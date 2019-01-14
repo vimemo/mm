@@ -45,6 +45,12 @@ angular
     var replicate = function(direction) {
       var options = getOptions(direction);
       var remote = DB({ remote: true });
+      console.log('Replicating from db-sync>>>>>>>>>>>>>>>>>>>>>');
+      console.log('Replicating from db-sync>>>>>>>>>>>>>>>>>>>>>');
+      console.log('Replicating from db-sync>>>>>>>>>>>>>>>>>>>>>');
+      console.log('Replicating from db-sync>>>>>>>>>>>>>>>>>>>>>');
+      console.log('Replicating from db-sync>>>>>>>>>>>>>>>>>>>>>');
+      console.log('Replicating from db-sync>>>>>>>>>>>>>>>>>>>>>------------------');
       return DB()
         .replicate[direction](remote, options)
         .on('denied', function(err) {
@@ -107,7 +113,7 @@ angular
       }
 
       /*
-      Controllers need the status of each directed replication (directedReplicationStatus) and the 
+      Controllers need the status of each directed replication (directedReplicationStatus) and the
       status of the replication as a whole (aggregateReplicationStatus).
       */
       if (!inProgressSync) {
